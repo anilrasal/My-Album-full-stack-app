@@ -148,6 +148,14 @@ The Album Management System is a web application that allows users to create, ed
 
   ![Change password Page](assets/changePassword.png)
 
+- Backend SwaggerUI REST APIs:
+
+  ![Rest API with swagger](assets/restAPIViewUsingSwagger1.png)
+
+  ![Album Controller](assets/swaggerUIAlbumController.png)
+
+  ![Auth Controller](assets/swaggerUIAuthController.png)
+
 ### API Endpoints
 
 - **Auth**
