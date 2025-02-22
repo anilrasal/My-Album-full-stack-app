@@ -94,41 +94,99 @@ The Album Management System is a web application that allows users to create, ed
 
 4. Admin users can access the admin panel to view total users and edit user authorities.
 
+## Screenshots
+
+- About Page which can be viewed without login as well:
+
+  ![About Page](assets/aboutPage.png)
+
+- Login Page:
+
+  ![Login Page](assets/loginPage.png)
+
+- Register Page:
+
+  ![Register Page](assets/registerPage.png)
+
+- Albums Home Page:
+
+  ![Albums Home Page](assets/albumsHomePage.png)
+
+- Add Album Page:
+
+  ![Add Album Page](assets/addAlbumPage.png)
+
+- Users List Page for admin only:
+
+  ![Users List Page](assets/usersList.png)
+
+- View Photos Page:
+
+  ![View Photos Page](assets/viewPhotos.png)
+
+- View Or Download photo Page:
+
+  ![View A Photo Page](assets/viewOrDownloadPhoto.png)
+
+- Upload Photos Page:
+
+  ![Upload Photos Page](assets/uploadMultipleOrSinglePhoto.png)
+
+- Edit Album Page:
+
+  ![Edit Album Page](assets/editAlbum.png)
+
+- User Profile Menu Top Right Corner For Easy Access:
+
+  ![User Profile Menu Page](assets/userProfileMenu.png)
+
+- User Profile Page:
+
+  ![User Profile Page](assets/userProfile.png)
+
+- Change Password Page:
+
+  ![Change password Page](assets/changePassword.png)
+
 ### API Endpoints
 
 - **Auth**
 
-- POST /api/v1/auth/register: Register a new user.
+  - POST /api/v1/auth/register: Register a new user.
 
-- POST /api/v1/auth/login: Log in with existing user credentials.
+  - POST /api/v1/auth/login: Log in with existing user credentials.
 
-- GET /api/v1/auth/profile: Get user profile.
+  - GET /api/v1/auth/profile: Get user profile.
 
-- PUT /api/v1/auth/profile/update-password: Update user password.
+  - PUT /api/v1/auth/profile/update-password: Update user password.
 
-- DELETE /api/v1/auth/profile/delete: Delete user profile.
+  - DELETE /api/v1/auth/profile/delete: Delete user profile.
 
-- POST /api/v1/auth/token: Obtain a new token.
+  - POST /api/v1/auth/token: Obtain a new token.
 
-- GET /api/v1/auth/users: Get total users.
+  - GET /api/v1/auth/users: Get total users.
 
-- PUT /api/v1/auth/users/{id}/update-authorities: Edit user authority.
+  - PUT /api/v1/auth/users/{id}/update-authorities: Edit user authority.
 
 - **Albums**
 
-- GET /api/v1/albums: Get all albums.
+  - PUT /api/v1/albums/{album_id}/photos/{photo_id}/update: Edit a photo in an album.
 
-- POST /api/albums: Create a new album.
+  - POST /api/v1/albums/{album_id}/upload_photos: Upload photos to an album.
 
-- PUT /api/albums/{id}: Edit an album.
+  - POST /api/v1/albums/add: Create a new album.
 
-- DELETE /api/albums/{id}: Delete an album.
+  - GET /api/v1/albums: Get all albums.
 
-- **Photos**
+  - GET /api/v1/albums/{album_id}: Get a specific album.
 
-- POST /api/photos: Upload a new photo.
+  - GET /api/v1/albums/{album_id}/photos/{photo_id}/download-thumbnail: Download a photo's thumbnail.
 
-- DELETE /api/photos/{id}: Delete a photo.
+  - GET /api/v1/albums/{album_id}/photos/{photo_id}/download-photo: Download a photo.
+
+  - DELETE /api/v1/albums/{album_id}/delete: Delete an album.
+
+  - DELETE /api/v1/albums/{album_id}/photos/{photo_id}/delete: Delete a photo from an album.
 
 ## License
 
