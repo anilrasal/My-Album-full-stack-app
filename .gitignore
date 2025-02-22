@@ -1,0 +1,4 @@
+/React Js Front End/node_modules/
+/Java Backend/target/
+.env
+.DS_Store
