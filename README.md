@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Album Management System is a web application that allows users to create, edit, and delete albums, as well as upload and delete photos. It also includes an admin role that can manage user authorities and view the total number of users. The application uses JWT for security and login. The backend is implemented using Java REST API with Spring Boot, and the frontend is built with React JS and Material-UI.
+The Album Management System is a web application that allows users to create, edit, and delete albums, as well as upload and delete photos. It also includes an admin role that can manage user authorities, view the total number of users, and create, edit, and delete their own albums and photos. The application uses JWT for security and login. The backend is implemented using Java REST API with Spring Boot, and the frontend is built with React JS and Material-UI. JWT tokens have a timeout of 60 minutes. **The application optimizes performance by using reduced-size thumbnails for images, ensuring faster loading times.**
 
 ## Features
 
